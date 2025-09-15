@@ -1,4 +1,3 @@
-````markdown
 # 🛡️ Data Mining Project — Cryptocurrency Fraud Detection (Naive Bayes)
 
 Kelompok 1 — Universitas Pamulang  
@@ -43,6 +42,7 @@ Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner s
 │   └── metrics.txt
 └── README.md
 ```
+
 ````
 
 ---
@@ -132,3 +132,4 @@ python3 crypto_fraud_basic.py
 ```
 
 ```
+````
