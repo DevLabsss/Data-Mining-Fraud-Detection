@@ -27,24 +27,26 @@ Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner s
 
 ## 🗂️ Struktur Repository
 
+````plaintext
 .
-├── crypto_fraud_basic.py # Script utama (generate data, train NB, evaluasi)
-├── requirements.txt # Dependencies minimal
+├── crypto_fraud_basic.py            # Script utama (generate data, train NB, evaluasi)
+├── requirements.txt                 # Dependencies minimal
 ├── Data_Mining_Fraud_Detection.pptx # Slide presentasi
-├── outputs_basic/ # Hasil eksekusi (terbuat saat run)
-│ ├── fraud_dataset.csv
-│ ├── confusion_matrix.csv
-│ ├── confusion_matrix.png
-│ ├── classification_report.txt
-│ └── metrics.txt
+├── outputs_basic/                   # Hasil eksekusi (terbuat saat run)
+│   ├── fraud_dataset.csv
+│   ├── confusion_matrix.csv
+│   ├── confusion_matrix.png
+│   ├── classification_report.txt
+│   └── metrics.txt
 └── README.md
+
 
 ## 📊 Deskripsi
 
-Proyek ini bertujuan untuk **mendeteksi transaksi fraud pada cryptocurrency**  
+Proyek ini bertujuan untuk **mendeteksi transaksi fraud pada cryptocurrency**
 menggunakan algoritma **Naive Bayes** sebagai model klasifikasi biner.
 
-Dataset yang digunakan adalah **synthetic dataset** dengan lebih dari **2000 transaksi**,  
+Dataset yang digunakan adalah **synthetic dataset** dengan lebih dari **2000 transaksi**,
 berisi fitur utama:
 
 - `amount`
@@ -79,7 +81,7 @@ pip install -r requirements.txt
 
 # 4) Jalankan
 python3 crypto_fraud_basic.py
-```
+````
 
 ## 📈 Hasil Evaluasi
 
