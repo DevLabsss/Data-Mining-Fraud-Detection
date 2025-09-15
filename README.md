@@ -1,108 +1,111 @@
-# 🛡️ Data Mining Project — Cryptocurrency Fraud Detection (Naive Bayes)
+🛡️ Data Mining Project — Cryptocurrency Fraud Detection (Naive Bayes)
 
-Kelompok 1 — Universitas Pamulang  
-Mata Kuliah: Data Mining  
+Kelompok 1 — Universitas Pamulang
+Mata Kuliah: Data Mining
 Dosen: Tri Prasetyo
 
----
+📌 Judul
 
-## 📌 Judul
+Prediksi Transaksi Fraud pada Cryptocurrency Menggunakan Algoritma Naive Bayes
 
-**Prediksi Transaksi Fraud pada Cryptocurrency Menggunakan Algoritma Naive Bayes**
+👥 Anggota Kelompok
 
-## 👥 Anggota Kelompok
+Achmad Syahril Fauzi (231011450396)
 
-- Achmad Syahril Fauzi (231011450396)
-- Abdul Fakhry (231011450644)
-- Ahmad Imam (231011450458)
+Abdul Fakhry (231011450644)
 
----
+Ahmad Imam (231011450458)
 
-## 🧠 Ringkasan Proyek
+🧠 Ringkasan Proyek
 
-Proyek ini mendeteksi apakah transaksi kripto **Normal (0)** atau **Fraud (1)** dengan model **Naive Bayes** pada **synthetic dataset** (≈ 5.000 baris).  
-Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner sebagai **baseline**.
+Proyek ini mendeteksi apakah transaksi kripto Normal (0) atau Fraud (1) dengan model Naive Bayes pada synthetic dataset (≈ 5.000 baris).
+Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner sebagai baseline.
 
 ---
 
 ## 🗂️ Struktur Repository
 
-```text
 .
-├── crypto_fraud_basic.py            # Script utama (generate data, train NB, evaluasi)
-├── requirements.txt                 # Dependencies minimal
+├── crypto_fraud_basic.py # Script utama (generate data, train NB, evaluasi)
+├── requirements.txt # Dependencies minimal
 ├── Data_Mining_Fraud_Detection.pptx # Slide presentasi
-├── outputs_basic/                   # Hasil eksekusi (terbuat saat run)
-│   ├── fraud_dataset.csv
-│   ├── confusion_matrix.csv
-│   ├── confusion_matrix.png
-│   ├── classification_report.txt
-│   └── metrics.txt
+├── outputs_basic/ # Hasil eksekusi (terbuat saat run)
+│ ├── fraud_dataset.csv
+│ ├── confusion_matrix.csv
+│ ├── confusion_matrix.png
+│ ├── classification_report.txt
+│ └── metrics.txt
 └── README.md
 
+📊 Deskripsi
 
-## 📊 Deskripsi
+Proyek ini bertujuan untuk mendeteksi transaksi fraud pada cryptocurrency menggunakan algoritma Naive Bayes sebagai model klasifikasi biner.
 
-Proyek ini bertujuan untuk **mendeteksi transaksi fraud pada cryptocurrency**
-menggunakan algoritma **Naive Bayes** sebagai model klasifikasi biner.
+Dataset yang digunakan adalah synthetic dataset dengan lebih dari 2000 transaksi, berisi fitur utama:
 
-Dataset yang digunakan adalah **synthetic dataset** dengan lebih dari **2000 transaksi**,
-berisi fitur utama:
+amount
 
-- `amount`
-- `transaction_freq_24h`
-- `account_age_days`
-- `is_weekend`
+transaction_freq_24h
 
-Label target: `is_fraud` (0 = Normal, 1 = Fraud).
+account_age_days
+
+is_weekend
+
+Label target: is_fraud (0 = Normal, 1 = Fraud).
+
+💻 Prasyarat
+
+Python 3.9+ (disarankan 3.10/3.11)
+
+OS: macOS / Linux / Windows
 
 ---
 
-## 💻 Prasyarat
+⚙️ Cara Menjalankan (Repro dari Nol)
 
-- Python 3.9+ (disarankan 3.10/3.11)
-- OS: macOS / Linux / Windows
+1. Clone Repository
 
----
-
-## ⚙️ Cara Menjalankan (Repro dari Nol)
-
-# 1) Clone
 git clone https://github.com/DevLabsss/Data-Mining-Fraud-Detection.git
 cd Data-Mining-Fraud-Detection
 
-# 2) (Opsional) Virtual env
-python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+2. (Opsional) Buat Virtual Environment
+   python3 -m venv .venv
+   source .venv/bin/activate # Windows: .venv\Scripts\activate
 
-# 3) Install dependencies
-pip install -r requirements.txt
+3. Install Dependencies
+   pip install -r requirements.txt
 
-# 4) Jalankan
-python3 crypto_fraud_basic.py
+4. Jalankan Script
+   python3 crypto_fraud_basic.py
 
+📈 Hasil Evaluasi
 
-## 📈 Hasil Evaluasi
+Algoritma: Gaussian Naive Bayes
 
-- **Algoritma:** Gaussian Naive Bayes
-- **Akurasi:** ~99%
-- **Confusion Matrix:** tersimpan di `outputs_basic/confusion_matrix.png`
-- **Classification Report:** lihat di `outputs_basic/classification_report.txt`
+Akurasi: ~99%
+
+Confusion Matrix: tersimpan di outputs_basic/confusion_matrix.png
+
+Classification Report: lihat di outputs_basic/classification_report.txt
 
 📊 Contoh Confusion Matrix:
-![Confusion Matrix](outputs_basic/confusion_matrix.png)
 
-## 🔍 Analisis & Saran
+🔍 Analisis & Saran
 
-- Dataset imbalance → fraud jauh lebih sedikit dibanding normal.
-- Akurasi tinggi tapi recall fraud rendah.
-- Perbaikan:
-  - Gunakan **SMOTE** untuk balancing.
-  - Bandingkan dengan algoritma lain (Logistic Regression, Random Forest).
-  - Tambah fitur lain (rasio amount/balance, jam transaksi, dll).
+Dataset imbalance → fraud jauh lebih sedikit dibanding normal.
 
-## 📚 Referensi
+Akurasi tinggi tapi recall fraud rendah.
 
-- Tan, Pang-Ning, Michael Steinbach, dan Vipin Kumar. _Introduction to Data Mining_.
-- Dokumentasi scikit-learn: https://scikit-learn.org/
-```
+Perbaikan:
+
+Gunakan SMOTE untuk balancing.
+
+Bandingkan dengan algoritma lain (Logistic Regression, Random Forest).
+
+Tambah fitur lain (rasio amount/balance, jam transaksi, dll).
+
+📚 Referensi
+
+Tan, Pang-Ning, Michael Steinbach, dan Vipin Kumar. Introduction to Data Mining.
+
+Dokumentasi scikit-learn: https://scikit-learn.org/
