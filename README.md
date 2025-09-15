@@ -27,7 +27,7 @@ Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner s
 
 ## 🗂️ Struktur Repository
 
-````plaintext
+```text
 .
 ├── crypto_fraud_basic.py            # Script utama (generate data, train NB, evaluasi)
 ├── requirements.txt                 # Dependencies minimal
@@ -67,7 +67,6 @@ Label target: `is_fraud` (0 = Normal, 1 = Fraud).
 
 ## ⚙️ Cara Menjalankan (Repro dari Nol)
 
-```bash
 # 1) Clone
 git clone https://github.com/DevLabsss/Data-Mining-Fraud-Detection.git
 cd Data-Mining-Fraud-Detection
@@ -81,7 +80,7 @@ pip install -r requirements.txt
 
 # 4) Jalankan
 python3 crypto_fraud_basic.py
-````
+
 
 ## 📈 Hasil Evaluasi
 
@@ -90,7 +89,7 @@ python3 crypto_fraud_basic.py
 - **Confusion Matrix:** tersimpan di `outputs_basic/confusion_matrix.png`
 - **Classification Report:** lihat di `outputs_basic/classification_report.txt`
 
-📊 Contoh Confusion Matrix:  
+📊 Contoh Confusion Matrix:
 ![Confusion Matrix](outputs_basic/confusion_matrix.png)
 
 ## 🔍 Analisis & Saran
@@ -106,3 +105,4 @@ python3 crypto_fraud_basic.py
 
 - Tan, Pang-Ning, Michael Steinbach, dan Vipin Kumar. _Introduction to Data Mining_.
 - Dokumentasi scikit-learn: https://scikit-learn.org/
+```
