@@ -43,8 +43,6 @@ Naive Bayes dipilih karena sederhana, cepat, dan cocok untuk klasifikasi biner s
 └── README.md
 ```
 
-````
-
 ---
 
 ## 📊 Deskripsi
@@ -127,9 +125,4 @@ python3 crypto_fraud_basic.py
 ## 📚 Referensi
 
 - Tan, Pang-Ning, Michael Steinbach, dan Vipin Kumar. _Introduction to Data Mining_
-- Dokumentasi scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
-
-```
-
-```
-````
+- Dokumentasi scikit-learn: [https://scikit-learn.org/]
